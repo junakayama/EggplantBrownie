@@ -9,17 +9,16 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet var nameField: UITextField!
+    
+    @IBOutlet var happinessField: UITextField!
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    @IBAction func add() {
+        let name = nameField.text
+        let happines = happinessField.text
+        print("eaten \(name) with happiness \(happines)!")
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
+    
 }
 
